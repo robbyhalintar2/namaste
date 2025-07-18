@@ -97,6 +97,7 @@
                 <li><a href="#features" class="block text-gray-200 hover:text-blue-400 text-xl font-medium transition duration-300 ease-in-out py-2 px-4 rounded-md">Fitur Unggulan</a></li>
                 <li><a href="#about" class="block text-gray-200 hover:text-blue-400 text-xl font-medium transition duration-300 ease-in-out py-2 px-4 rounded-md">Tentang Kami</a></li>
                 <li><a href="#contact" class="block text-gray-200 hover:text-blue-400 text-xl font-medium transition duration-300 ease-in-out py-2 px-4 rounded-md">Kontak</a></li>
+                <li><a href="/databasehypex/" class="block text-gray-200 hover:text-blue-400 text-xl font-medium transition duration-300 ease-in-out py-2 px-4 rounded-md">Login Database</a></li>
             </ul>
         </div>
     </header>
@@ -518,7 +519,7 @@
                     <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22H12c5.523 0 10-4.477 10-10z" clip-rule="evenodd" /></svg>
                 </a>
                 <a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300 ease-in-out">
-                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c-1.11 0-2.01-.9-2.01-2.01V10.2c0-1.11.9-2.01 2.01-2.01h7.42c1.11 0 2.01.9 2.01 2.01v8.04c0 1.11-.9 2.01-2.01 2.01H8.29zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.6 7.6c.72 0 1.3.58 1.3 1.3v8.04c0 .72-.58 1.3-1.3 1.3H8.29c-.72 0-1.3-.58-1.3-1.3V10.2c0-.72.58-1.3 1.3-1.3h7.42zM12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 13.5c-2.49 0-4.5-2.01-4.5-4.5s2.01-4.5 4.5-4.5 4.5 2.01 4.5 4.5-2.01 4.5-4.5 4.5zM12 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c-1.11 0-2.01-.9-2.01-2.01V10.2c0-1.11.9-2.01 2.01-2.01h7.42c1.11 0 2.01.9 2.01 2.01v8.04c0 1.11-.9 1.3-1.3-1.3V10.2c0-.72.58-1.3 1.3-1.3h7.42zM12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 13.5c-2.49 0-4.5-2.01-4.5-4.5s2.01-4.5 4.5-4.5 4.5 2.01 4.5 4.5-2.01 4.5-4.5 4.5zM12 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
                 </a>
                 <a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300 ease-in-out">
                     <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
