@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypex Host 2025 - Hosting Pterodactyl Termurah</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the Inter font */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+        }
+        /* Custom scrollbar for a sleek look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a; /* Deeper dark background for the track */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #475569; /* Grayish thumb */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b; /* Lighter gray on hover */
+        }
+
+        /* Keyframe animations for subtle effects */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        /* Apply animations */
+        .animate-fade-in { animation: fadeIn 0.8s ease-out forwards; }
+        .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+        .animate-scale-in { animation: scaleIn 0.8s ease-out forwards; }
+
+        /* Delay utilities */
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-500 { animation-delay: 0.5s; }
+        .delay-600 { animation-delay: 0.6s; }
+        .delay-700 { animation-delay: 0.7s; }
+        .delay-800 { animation-delay: 0.8s; }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-gray-900 shadow-xl py-4 px-6 md:px-10 sticky top-0 z-50 rounded-b-xl border-b border-blue-800/30">
+        <nav class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-4xl font-extrabold text-blue-500 hover:text-blue-400 transition duration-300 ease-in-out transform hover:scale-105">
+                Hypex Host
+            </a>
+
+            <!-- Navigation Links (Hidden on small screens, shown on medium and up) -->
+            <ul class="hidden md:flex space-x-10">
+                <li><a href="#home" class="text-gray-300 hover:text-blue-400 text-lg font-medium transition duration-300 ease-in-out py-2 border-b-2 border-transparent hover:border-blue-500">Beranda</a></li>
+                <li><a href="#pterodactyl-hosting" class="text-gray-300 hover:text-blue-400 text-lg font-medium transition duration-300 ease-in-out py-2 border-b-2 border-transparent hover:border-blue-500">Pterodactyl Hosting</a></li>
+                <li><a href="#features" class="text-gray-300 hover:text-blue-400 text-lg font-medium transition duration-300 ease-in-out py-2 border-b-2 border-transparent hover:border-blue-500">Fitur Unggulan</a></li>
+                <li><a href="#about" class="text-gray-300 hover:text-blue-400 text-lg font-medium transition duration-300 ease-in-out py-2 border-b-2 border-transparent hover:border-blue-500">Tentang Kami</a></li>
+                <li><a href="#contact" class="text-gray-300 hover:text-blue-400 text-lg font-medium transition duration-300 ease-in-out py-2 border-b-2 border-transparent hover:border-blue-500">Kontak</a></li>
+                <li><a href="/databasehypex/" class="text-gray-300 hover:text-blue-400 text-lg font-medium transition duration-300 ease-in-out py-2 border-b-2 border-transparent hover:border-blue-500">Login Database</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button (Hamburger Icon) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 hover:text-blue-400 focus:outline-none">
+                    <svg class="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 mt-4 rounded-lg shadow-inner border border-gray-700">
+            <ul class="flex flex-col items-center py-4 space-y-4">
+                <li><a href="#home" class="block text-gray-200 hover:text-blue-400 text-xl font-medium transition duration-300 ease-in-out py-2 px-4 rounded-md">Beranda</a></li>
+                <li><a href="#pterodactyl-hosting" class="block text-gray-200 hover:text-blue-400 text-xl font-medium transition duration-300 ease-in-out py-2 px-4 rounded-md">Pterodactyl Hosting</a></li>
+                <li><a href="#features" class="block text-gray-200 hover:text-blue-400 text-xl font-medium transition duration-300 ease-in-out py-2 px-4 rounded-md">Fitur Unggulan</a></li>
+                <li><a href="#about" class="block text-gray-200 hover:text-blue-400 text-xl font-medium transition duration-300 ease-in-out py-2 px-4 rounded-md">Tentang Kami</a></li>
+                <li><a href="#contact" class="block text-gray-200 hover:text-blue-400 text-xl font-medium transition duration-300 ease-in-out py-2 px-4 rounded-md">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative bg-gradient-to-br from-gray-950 to-gray-800 py-24 md:py-40 text-center overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <!-- Background pattern SVG for a futuristic look -->
+                <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+                    <defs>
+                        <pattern id="grid-bg" width="10" height="10" patternUnits="userSpaceOnUse">
+                            <path d="M 10 0 L 0 0 L 0 10" fill="none" stroke="#1f2937" stroke-width="0.5"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid-bg)" />
+                </svg>
+            </div>
+            <div class="container mx-auto px-6 relative z-10">
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-fade-in-up">
+                    Hosting Pterodactyl Termurah!
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto mb-12 animate-fade-in-up delay-200">
+                    Dapatkan performa tak tertandingi, keamanan mutakhir, dan dukungan 24/7 untuk server game dan aplikasi Anda. Hypex Host, solusi hosting yang belum pernah Anda temukan sebelumnya.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-6 animate-fade-in-up delay-400">
+                    <a href="#pterodactyl-hosting" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                        Lihat Paket Pterodactyl
+                    </a>
+                    <a href="#contact" class="inline-block border-2 border-blue-600 text-blue-300 hover:bg-blue-600 hover:text-white font-bold py-4 px-10 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                        Hubungi Kami
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pterodactyl Hosting Pricing Section -->
+        <section id="pterodactyl-hosting" class="py-20 md:py-32 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-blue-400 animate-fade-in">Pilihan Paket Pterodactyl Hosting Premium</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+
+                    <!-- Plan 1 GB RAM -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-2xl border border-gray-700 flex flex-col justify-between transform hover:scale-105 transition duration-300 ease-in-out animate-scale-in delay-100">
+                        <div>
+                            <h3 class="text-2xl font-bold text-center text-gray-200 mb-4">RAM 1 GB</h3>
+                            <ul class="text-gray-300 text-base space-y-2 mb-6">
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>CPU: 2 vCore (200%)</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Storage: 5 GB NVMe SSD</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Bandwidth: Unlimited</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Internet Speed: Up to 1Gbps</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Server Region: Singapore</li>
+                            </ul>
+                            <div class="text-center mb-6">
+                                <p class="text-gray-400 line-through text-lg">Rp 8.000</p>
+                                <span class="text-4xl font-extrabold text-blue-500">Rp 6.000</span>
+                                <span class="text-lg text-gray-400">/bulan</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                            Pilih Paket Ini
+                        </button>
+                    </div>
+
+                    <!-- Plan 2 GB RAM -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-2xl border border-gray-700 flex flex-col justify-between transform hover:scale-105 transition duration-300 ease-in-out animate-scale-in delay-200">
+                        <div>
+                            <h3 class="text-2xl font-bold text-center text-gray-200 mb-4">RAM 2 GB</h3>
+                            <ul class="text-gray-300 text-base space-y-2 mb-6">
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>CPU: 4 vCore (400%)</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Storage: 10 GB NVMe</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Bandwidth: Unlimited</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Internet Speed: Up to 1Gbps</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Server Region: Singapore</li>
+                            </ul>
+                            <div class="text-center mb-6">
+                                <p class="text-gray-400 line-through text-lg">Rp 16.000</p>
+                                <span class="text-4xl font-extrabold text-blue-500">Rp 12.000</span>
+                                <span class="text-lg text-gray-400">/bulan</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                            Pilih Paket Ini
+                        </button>
+                    </div>
+
+                    <!-- Plan 4 GB RAM -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-2xl border border-gray-700 flex flex-col justify-between transform hover:scale-105 transition duration-300 ease-in-out animate-scale-in delay-300">
+                        <div>
+                            <h3 class="text-2xl font-bold text-center text-gray-200 mb-4">RAM 4 GB</h3>
+                            <ul class="text-gray-300 text-base space-y-2 mb-6">
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>CPU: 4 vCore (400%)</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Storage: 20 GB NVMe</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Bandwidth: Unlimited</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Internet Speed: Up to 1Gbps</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Server Region: Singapore</li>
+                            </ul>
+                            <div class="text-center mb-6">
+                                <p class="text-gray-400 line-through text-lg">Rp 32.000</p>
+                                <span class="text-4xl font-extrabold text-blue-500">Rp 24.000</span>
+                                <span class="text-lg text-gray-400">/bulan</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                            Pilih Paket Ini
+                        </button>
+                    </div>
+
+                    <!-- Plan 5 GB RAM -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-2xl border border-gray-700 flex flex-col justify-between transform hover:scale-105 transition duration-300 ease-in-out animate-scale-in delay-400">
+                        <div>
+                            <h3 class="text-2xl font-bold text-center text-gray-200 mb-4">RAM 5 GB</h3>
+                            <ul class="text-gray-300 text-base space-y-2 mb-6">
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>CPU: 4 vCore (400%)</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Storage: 25 GB NVMe</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Bandwidth: Unlimited</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Internet Speed: Up to 1Gbps</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Server Region: Singapore</li>
+                            </ul>
+                            <div class="text-center mb-6">
+                                <p class="text-gray-400 line-through text-lg">Rp 40.000</p>
+                                <span class="text-4xl font-extrabold text-blue-500">Rp 30.000</span>
+                                <span class="text-lg text-gray-400">/bulan</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                            Pilih Paket Ini
+                        </button>
+                    </div>
+
+                    <!-- Plan 6 GB RAM -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-2xl border border-gray-700 flex flex-col justify-between transform hover:scale-105 transition duration-300 ease-in-out animate-scale-in delay-500">
+                        <div>
+                            <h3 class="text-2xl font-bold text-center text-gray-200 mb-4">RAM 6 GB</h3>
+                            <ul class="text-gray-300 text-base space-y-2 mb-6">
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>CPU: 4 vCore (400%)</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Storage: 30 GB NVMe</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Bandwidth: Unlimited</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Internet Speed: Up to 1Gbps</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Server Region: Singapore</li>
+                            </ul>
+                            <div class="text-center mb-6">
+                                <p class="text-gray-400 line-through text-lg">Rp 48.000</p>
+                                <span class="text-4xl font-extrabold text-blue-500">Rp 36.000</span>
+                                <span class="text-lg text-gray-400">/bulan</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                            Pilih Paket Ini
+                        </button>
+                    </div>
+
+                    <!-- Plan 8 GB RAM -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-2xl border border-gray-700 flex flex-col justify-between transform hover:scale-105 transition duration-300 ease-in-out animate-scale-in delay-600">
+                        <div>
+                            <h3 class="text-2xl font-bold text-center text-gray-200 mb-4">RAM 8 GB</h3>
+                            <ul class="text-gray-300 text-base space-y-2 mb-6">
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>CPU: 4 vCore (400%)</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Storage: 40 GB NVMe SSD</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Bandwidth: Unlimited</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Internet Speed: Up to 1Gbps</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Server Region: Singapore</li>
+                            </ul>
+                            <div class="text-center mb-6">
+                                <p class="text-gray-400 line-through text-lg">Rp 64.000</p>
+                                <span class="text-4xl font-extrabold text-blue-500">Rp 48.000</span>
+                                <span class="text-lg text-gray-400">/bulan</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                            Pilih Paket Ini
+                        </button>
+                    </div>
+
+                    <!-- Plan 10 GB RAM -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-2xl border border-gray-700 flex flex-col justify-between transform hover:scale-105 transition duration-300 ease-in-out animate-scale-in delay-700">
+                        <div>
+                            <h3 class="text-2xl font-bold text-center text-gray-200 mb-4">RAM 10 GB</h3>
+                            <ul class="text-gray-300 text-base space-y-2 mb-6">
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>CPU: 4 vCore (400%)</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Storage: 50 GB NVMe SSD</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Bandwidth: Unlimited</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Internet Speed: Up to 1Gbps</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Server Region: Singapore</li>
+                            </ul>
+                            <div class="text-center mb-6">
+                                <p class="text-gray-400 line-through text-lg">Rp 80.000</p>
+                                <span class="text-4xl font-extrabold text-blue-500">Rp 60.000</span>
+                                <span class="text-lg text-gray-400">/bulan</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                            Pilih Paket Ini
+                        </button>
+                    </div>
+
+                    <!-- Plan 12 GB RAM -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-2xl border border-gray-700 flex flex-col justify-between transform hover:scale-105 transition duration-300 ease-in-out animate-scale-in delay-800">
+                        <div>
+                            <h3 class="text-2xl font-bold text-center text-gray-200 mb-4">RAM 12 GB</h3>
+                            <ul class="text-gray-300 text-base space-y-2 mb-6">
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>CPU: 6 vCore (600%)</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Storage: 60 GB NVMe SSD</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Bandwidth: Unlimited</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Internet Speed: Up to 1Gbps</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Server Region: Singapore</li>
+                            </ul>
+                            <div class="text-center mb-6">
+                                <p class="text-gray-400 line-through text-lg">Rp 96.000</p>
+                                <span class="text-4xl font-extrabold text-blue-500">Rp 72.000</span>
+                                <span class="text-lg text-gray-400">/bulan</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                            Pilih Paket Ini
+                        </button>
+                    </div>
+
+                    <!-- Plan 14 GB RAM -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-2xl border border-gray-700 flex flex-col justify-between transform hover:scale-105 transition duration-300 ease-in-out animate-scale-in delay-100">
+                        <div>
+                            <h3 class="text-2xl font-bold text-center text-gray-200 mb-4">RAM 14 GB</h3>
+                            <ul class="text-gray-300 text-base space-y-2 mb-6">
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>CPU: 6 vCore (600%)</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Storage: 70 GB NVMe</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Bandwidth: Unlimited</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Internet Speed: Up to 1Gbps</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Server Region: Singapore</li>
+                            </ul>
+                            <div class="text-center mb-6">
+                                <p class="text-gray-400 line-through text-lg">Rp 112.000</p>
+                                <span class="text-4xl font-extrabold text-blue-500">Rp 84.000</span>
+                                <span class="text-lg text-gray-400">/bulan</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                            Pilih Paket Ini
+                        </button>
+                    </div>
+
+                    <!-- Plan 16 GB RAM -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-2xl border border-gray-700 flex flex-col justify-between transform hover:scale-105 transition duration-300 ease-in-out animate-scale-in delay-200">
+                        <div>
+                            <h3 class="text-2xl font-bold text-center text-gray-200 mb-4">RAM 16 GB</h3>
+                            <ul class="text-gray-300 text-base space-y-2 mb-6">
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>CPU: 6 vCore (600%)</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Storage: 80 GB NVMe SSD</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Bandwidth: Unlimited</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Internet Speed: Up to 1Gbps</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Server Region: Singapore</li>
+                            </ul>
+                            <div class="text-center mb-6">
+                                <p class="text-gray-400 line-through text-lg">Rp 128.000</p>
+                                <span class="text-4xl font-extrabold text-blue-500">Rp 96.000</span>
+                                <span class="text-lg text-gray-400">/bulan</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                            Pilih Paket Ini
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Pterodactyl Features Section -->
+        <section id="features" class="py-20 md:py-32 bg-gray-950">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-blue-400 animate-fade-in">Fitur Unggulan Pterodactyl Hosting</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-16">
+                    <!-- Feature 1: Region Indonesia -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-700 flex items-center animate-scale-in delay-100">
+                        <svg class="w-12 h-12 text-green-400 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0L6.343 16.657m10.607-10.607L13.414 3.1a1.998 1.998 0 00-2.828 0L6.343 6.343m10.607 10.607L20.9 13.414a1.998 1.998 0 000-2.828L16.657 6.343m-10.607 10.607L3.1 13.414a1.998 1.998 0 010-2.828L6.343 6.343"></path></svg>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-200">REGION SINGAPORE</h3>
+                            <p class="text-gray-400">Server berlokasi di SINGAPORE untuk latensi super rendah.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 2: UPTIME 99% (Anti Down) -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-700 flex items-center animate-scale-in delay-200">
+                        <svg class="w-12 h-12 text-green-400 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 002 12c0 2.757 1.125 5.228 2.93 7.071l-.707.707a1 1 0 001.414 1.414L6 20.414l.707.707a1 1 0 001.414-1.414l-.707-.707A12.001 12.001 0 0012 22c2.757 0 5.228-1.125 7.071-2.93l.707.707a1 1 0 001.414-1.414l-.707-.707A11.955 11.955 0 0122 12a11.955 11.955 0 01-3.04-8.618z"></path></svg>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-200">UPTIME 99% (Anti Down)</h3>
+                            <p class="text-gray-400">Server Anda akan selalu online dengan jaminan uptime tinggi.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 3: ANTI DDoS L4 -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-700 flex items-center animate-scale-in delay-300">
+                        <svg class="w-12 h-12 text-green-400 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 002 12c0 2.757 1.125 5.228 2.93 7.071l-.707.707a1 1 0 001.414 1.414L6 20.414l.707.707a1 1 0 001.414-1.414l-.707-.707A12.001 12.001 0 0012 22c2.757 0 5.228-1.125 7.071-2.93l.707.707a1 1 0 001.414-1.414l-.707-.707A11.955 11.955 0 0122 12a11.955 11.955 0 01-3.04-8.618z"></path></svg>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-200">ANTI DDoS L4</h3>
+                            <p class="text-gray-400">Perlindungan DDoS tingkat lanjut untuk menjaga server Anda aman.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 4: ONLINE 24/7 -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-700 flex items-center animate-scale-in delay-400">
+                        <svg class="w-12 h-12 text-green-400 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-200">ONLINE 24/7</h3>
+                            <p class="text-gray-400">Server Anda aktif dan dapat diakses setiap saat.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 5: NVMe SSDs -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-700 flex items-center animate-scale-in delay-500">
+                        <svg class="w-12 h-12 text-green-400 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"></path></svg>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-200">NVMe SSDs</h3>
+                            <p class="text-gray-400">Penyimpanan super cepat untuk performa maksimal.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 6: GARANSI FULL 30 HARI -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-700 flex items-center animate-scale-in delay-600">
+                        <svg class="w-12 h-12 text-green-400 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-200">GARANSI FULL 30 HARI</h3>
+                            <p class="text-gray-400">Kepuasan terjamin dengan garansi uang kembali 30 hari.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 7: MASA AKTIF 30 HARI -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-700 flex items-center animate-scale-in delay-700">
+                        <svg class="w-12 h-12 text-green-400 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-200">MASA AKTIF 30 HARI</h3>
+                            <p class="text-gray-400">Setiap paket aktif selama 30 hari penuh.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 8: FREE 2 ADDITIONAL PORT -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-700 flex items-center animate-scale-in delay-800">
+                        <svg class="w-12 h-12 text-green-400 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-200">FREE 2 ADDITIONAL PORT</h3>
+                            <p class="text-gray-400">Dapatkan 2 port tambahan gratis untuk fleksibilitas lebih.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 9: FREE 1 SLOT BACKUP -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-700 flex items-center animate-scale-in delay-900">
+                        <svg class="w-12 h-12 text-green-400 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004 16.087V12H3m0 0L6 5m-3 7l3 7"></path></svg>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-200">FREE 1 SLOT BACKUP</h3>
+                            <p class="text-gray-400">Amankan data Anda dengan 1 slot backup gratis.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 10: UNLIMITED ADDITIONAL SUB USER -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-700 flex items-center animate-scale-in delay-1000">
+                        <svg class="w-12 h-12 text-green-400 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h2a2 2 0 002-2V8a2 2 0 00-2-2h-2M14 10l-4 4m0 0l-4-4m4 4V3"></path></svg>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-200">UNLIMITED ADDITIONAL SUB USER</h3>
+                            <p class="text-gray-400">Tambahkan sub-pengguna sebanyak yang Anda butuhkan.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 11: AUTO BACKUP -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-700 flex items-center animate-scale-in delay-1100">
+                        <svg class="w-12 h-12 text-green-400 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004 16.087V12H3m0 0L6 5m-3 7l3 7"></path></svg>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-200">AUTO BACKUP</h3>
+                            <p class="text-gray-400">Pencadangan otomatis untuk ketenangan pikiran Anda.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 12: DAPAT DI PERPANJANG -->
+                    <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-700 flex items-center animate-scale-in delay-1200">
+                        <svg class="w-12 h-12 text-green-400 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-200">DAPAT DI PERPANJANG</h3>
+                            <p class="text-gray-400">Perpanjang masa aktif hosting Anda dengan mudah.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-3xl font-bold text-center mb-8 text-blue-400 animate-fade-in mt-16">Didukung untuk Berbagai Aplikasi</h3>
+                <div class="flex flex-wrap justify-center gap-6 animate-fade-in-up delay-100">
+                    <span class="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-blue-700 transition duration-300">Minecraft [Java - Bedrock]</span>
+                    <span class="bg-purple-600 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-purple-700 transition duration-300">Discord BOT</span>
+                    <span class="bg-green-600 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-green-700 transition duration-300">SAMP</span>
+                    <span class="bg-red-600 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-red-700 transition duration-300">FiveM</span>
+                    <span class="bg-gray-600 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-gray-700 transition duration-300">Dan Lainnya...</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section (Remains the same) -->
+        <section id="about" class="py-20 md:py-32 bg-gray-900">
+            <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 animate-fade-in-up delay-200">
+                    <img src="https://placehold.co/600x400/1f2937/9ca3af?text=Tim+Profesional" alt="Tim Profesional Hypex Host" class="rounded-xl shadow-2xl border-2 border-blue-600 transform hover:scale-105 transition duration-300 ease-in-out">
+                </div>
+                <div class="lg:w-1/2 text-center lg:text-left animate-fade-in-up delay-400">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-blue-400">Tentang Hypex Host</h2>
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        Hypex Host didirikan dengan visi untuk menyediakan layanan hosting terbaik yang belum pernah ada sebelumnya. Kami menggabungkan teknologi terbaru dengan dukungan pelanggan yang luar biasa untuk memastikan server game dan aplikasi Anda selalu online, cepat, dan aman.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Kami adalah tim profesional yang berdedikasi untuk inovasi dan kepuasan pelanggan. Percayakan hosting Anda kepada kami dan rasakan perbedaannya.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action / Contact Section (Remains the same) -->
+        <section id="contact" class="py-20 md:py-32 bg-gray-950 text-center">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8 text-blue-400 animate-fade-in">Siap untuk Hosting Terbaik?</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-12 animate-fade-in delay-200">
+                    Jangan ragu untuk menghubungi tim kami jika Anda memiliki pertanyaan atau ingin memulai perjalanan hosting Anda bersama Hypex Host.
+                </p>
+                <a href="https://discord.gg/TwwF8nadvw" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-12 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out animate-fade-in delay-400">
+                    Join Link Discord Sekarang!!
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section (Remains the same) -->
+    <footer class="bg-gray-900 py-8 px-6 md:px-10 rounded-t-xl border-t border-blue-800/30">
+        <div class="container mx-auto text-center md:flex md:justify-between md:items-center">
+            <p class="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2025 Hypex Host. Hak Cipta Dilindungi.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300 ease-in-out">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22H12c5.523 0 10-4.477 10-10z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300 ease-in-out">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c-1.11 0-2.01-.9-2.01-2.01V10.2c0-1.11.9-2.01 2.01-2.01h7.42c1.11 0 2.01.9 2.01 2.01v8.04c0 1.11-.9 2.01-2.01 2.01H8.29zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.6 7.6c.72 0 1.3.58 1.3 1.3v8.04c0 .72-.58 1.3-1.3 1.3H8.29c-.72 0-1.3-.58-1.3-1.3V10.2c0-.72.58-1.3 1.3-1.3h7.42zM12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 13.5c-2.49 0-4.5-2.01-4.5-4.5s2.01-4.5 4.5-4.5 4.5 2.01 4.5 4.5-2.01 4.5-4.5 4.5zM12 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300 ease-in-out">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Intersection Observer for scroll-based animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1 // Trigger when 10% of the element is visible
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Add a class that triggers the animation
+                    entry.target.classList.add('is-visible');
+                    // Stop observing once the animation is triggered
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Apply animations to elements when they come into view
+        document.querySelectorAll('.animate-fade-in, .animate-fade-in-up, .animate-scale-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
